@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPING</title>
+</head>
+<body>
+    <script>
+        // for
+        dari bill terbesar ke terkecil
+        for(let z = 15; z > 5; z--) {
+            console.log(`data ke -`, z)
+        }
+        
+        // dari bill terkecil ke terbesar
+        for(let z = 5; z < 20; z++) {
+            console.log(`data ke -`, z)
+        }
+
+        // while
+        let x = 1
+        while(x <=10) {
+            console.log(`data x ke-`, x)
+            x++
+        }
+
+        // Do While
+        let y = 1
+        do {
+            console.log(`data y ke-`, y)
+            y++
+        } while (y <= 10)
+
+        //  for, ganjil genap
+        for(let a = 1; a <= 10; a++) {
+            if(a % 2 !==0) {
+            console.log(`ganjil`, a)
+        } else {
+            console.log(`genap`, a)
+        }
+    }
+
+    // while, ganjil genap
+    let z = 1
+    while(z <= 20) {
+        if(z % 2 !==0) {
+            console.log(`ganjil`, z)
+            z++
+        } else {
+            console.log(`genap`, z)
+            z++
+        }
+    }
+
+    // Do While, ganjil genap
+        let x = 1
+        do { 
+           if(x % 2 !==0) {
+            console.log(`ganjil`, x)
+           } else {
+            console.log(`genap`, x)
+           }
+           x++
+        } while (x <= 10)
+       
+        // menghitung n faktorial
+        let hasilperkalian = 1;
+        for(let n = 1; n <= 5; n++) {
+            hasilperkalian *= n;
+        }
+        console.log('hasil perkaliannya adalah', hasilperkalian)
+         
+        // menghitung n faktorial pt.2 (for)
+        let faktorial = 1
+        let angka = 5
+        for(let n =1; n <= angka; n++) {
+            faktorial *= n;
+        }
+
+        document.write (`Faktorial dari ${angka} adalah ${faktorial}`)
+
+        // menghitung n faktorial (while)
+        let angka = 5
+        let x = 1
+        let faktorial = 1
+        while(x <= angka) {
+            faktorial *= x
+            console.log(`hasil faktorial dari ${angka} adalah ${faktorial}`)
+        x++
+    }
+       console.log(`hasil faktorial dari ${angka} adalah ${faktorial}`)
+
+    // menghitung n faktorial (Do While)
+    let faktorial = 1
+    let angka = 5
+    let n = 1
+    do {
+        console.log (`faktorial dari ${angka} adalah ${faktorial}`)
+        n++
+        faktorial *= n
+    } while(n <= angka)
+
+    // Menghitung tahun kabisat
+    for(let tahun = 1600; tahun <= 2024; tahun++) {
+        if (tahun % 400 === 0) {
+            console.log (`tahun ${tahun} adalah tahun kabisat`)
+        } else if (tahun % 100 ===0) {
+            console.log (`adalah bukan tahun kabisat`)
+        } else if (tahun % 4 ===0) {
+            console.log (`adalah tahun kabisat`)
+        }
+    }
+        </script>
+</body>
+</html>
